@@ -5,6 +5,7 @@ import Quienes from './componentes/Quienes.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Frases from './componentes/Frases.jsx';
 import Indicadores from './componentes/Indicadores.jsx';
+import Contacto from './componentes/Contacto.jsx';
 
 function App() {
   return (
@@ -16,9 +17,15 @@ function App() {
       descripcion='Con disciplina comercial, ofrecemos estos y más indicadores para garantizar la continuidad de la operación.'
       />
       <Indicadores/>
+      <Frases
+      pregunta='¿Que nos caracteriza de las otras empresas?'
+      descripcion='Nuestra app nos permite dar soluciones a la medida y brindar una información rápida y oportuna para la toma de desiciones'
+      imagen='Disp1'
+      />
       
       <Marcas/>
-    
+      
+    <Contacto/>
     </div>
   );
 }

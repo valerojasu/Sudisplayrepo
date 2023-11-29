@@ -29,6 +29,15 @@ return(
         <Col className="indi" >
       <h3 className="indif">Estandarización de procesos</h3>
         </Col>
+      </Row>
+      <Row>
+      <Col className="indi" >
+      <h3 className="indif"> Activación BTL del PDV </h3>
+        </Col>
+        <Col className="indi" >
+      <h3 className="indif"> Comandos de ejecución</h3>
+        </Col>
+       
         
       </Row>
       
