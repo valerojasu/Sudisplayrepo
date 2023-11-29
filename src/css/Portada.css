@@ -1,39 +1,21 @@
 /*NAVBAR*/
-.navbar{
-    background:  rgba(0, 0, 0, 0.375);
-    color: white;
-    line-height: 1.8;    
-    padding: 1% 0%;
-}
     
 .logonav{
-    width:10%;
+    width:15%;
 }
 .sonri{
     width: 10%;
 }
-.container-fluid{
-    display: flex;
-    width: 90%;
-    flex-wrap: inherit;
-    align-items: center;
-}
 
-.menutit{
+.navbar-light .navbar-nav .nav-link {
+    color: WHITE;
     font-size: 1.3rem;
-    align-items: center;
-    display: flex;
-    color:white;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0% 3%;
-    font-family: 'Raleway', sans-serif;
 
 }
-.menutit:hover{
-color: #bcd424;
-cursor: pointer;    
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #bcd424;
+    cursor: pointer;  
 }
 
 .divi{

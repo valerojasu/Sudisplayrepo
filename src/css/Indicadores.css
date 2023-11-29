@@ -1,0 +1,16 @@
+.indi{
+    background-color: #bed226;
+    margin: 1%;
+    border-radius: 5%;
+    border: solid  #bcd310;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.indif{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3%;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}

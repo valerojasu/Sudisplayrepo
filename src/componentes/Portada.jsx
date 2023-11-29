@@ -1,33 +1,29 @@
 import React from "react";
 import '../css/Portada.css'
+import { Container, Navbar, Nav } from 'react-bootstrap';
+
 
 function Portada(){
     return(
 
         <div className="main"> 
-            <nav class="navbar navbar">
-            <div class="container-fluid">
-            <img 
-            src={require('../Imagenes/Logo/Logoaba.png')} 
-            className="logonav" 
-            alt="logo nav" /> 
-            <ul class="nav">
-            <div class="menuitem">   
-                <li class="nav-item">
-                <p class="menutit">Inicio</p>
-                </li>
-            <section class="divi">
-
-            </section>
-                
-                    <li class="nav-item">
-                    <p class="menutit">Contacto</p>
-                    </li>
-                </div>
-                
-            </ul> 
-            </div>
-                </nav>
+        {/*Menu*/}
+        <Navbar>
+        <Container>
+        <Navbar.Brand href="#home">
+            <img
+              src={require ('../Imagenes/Logo/Logoaba.png')}
+              className="logonav"
+              alt="SuDisplayLogo logo"
+            />
+          </Navbar.Brand>          
+          <Nav >
+            <Nav.Link href="#" >INICIO</Nav.Link>
+            <Nav.Link href="#" >CONTACTO</Nav.Link>
+          
+          </Nav>
+        </Container>
+      </Navbar>
                 
 
                 {/*Portada*/}
