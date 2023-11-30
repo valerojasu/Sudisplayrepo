@@ -1,0 +1,85 @@
+.number{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 25% 10%;
+    background-color:white;
+    height: auto;
+    text-decoration: none;
+}
+
+.encima{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.encima:hover{
+    color: #282c54;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.titulo{
+    font-size: 1.3rem;
+    margin:2% 0%;
+    width: 100%;
+    font-weight: 100%;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 300px) {
+    /*Nav*/
+
+    .number{
+        height: auto;
+    }
+    .titulo{
+        font-size: 0.8rem;
+    }
+    .encima{
+        font-size: 0.8rem;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+
+    .titulo{
+        font-size: 1.2rem;
+    
+    }
+    .encima{
+        font-size: 1rem;
+     
+    }
+
+   
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1500px){
+    .number{
+        width: 100%;
+        margin: 2% 1%;
+        height: auto;
+    }
+    .titulo{
+        font-size: 1.4rem;
+    
+    }
+    .encima{
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .encima:hover{
+        color: #282c54;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

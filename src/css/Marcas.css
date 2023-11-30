@@ -1,0 +1,58 @@
+.Marcas-box{
+    align-content: center;
+    background: white;
+    width: 100%;
+    margin: 2% 0%;
+    padding: 0% 10%;
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+
+}
+.marcat{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 10% 0%;
+    font-size: 2.7rem;
+}
+  
+.Logof {
+    object-fit:fill;
+    width: 50%;
+    scroll-snap-align: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 499px){
+
+
+    .marcat{
+    
+        font-size: 1rem;
+    }
+      
+    .Logof {
+        width: 80%;  
+        margin: 10% 0%;
+      
+    }
+    
+   
+
+}
+@media screen and (min-width: 500px) and (max-width: 1000px){
+   
+    .marcat{
+    
+        font-size: 1.7rem;
+    }
+      
+    .Logof {
+        width: 80%;  
+        margin: 8% 0%;
+      
+    }
+
+}
