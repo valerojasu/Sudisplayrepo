@@ -1,23 +1,34 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../Imagenes/Logo/Logoaba.png'
 import '../css/Portada.css'
-import { BrowserRouter, Routes,Route} from "react-router-dom"; 
-
 
 function Portada(){
     return(
+<div className='main'>
+<nav className="navbar navbar">
+    <div className="container-fluid">
+      <div className="menuitem">
+      <Link to='/' >
+    <img src={logo} alt="logo" className='logonav'/> 
+      </Link>
+        <li className="nav-item">
+          <Link to='/' className="menutit">Inicio </Link>
+        </li>
 
-        <div className="main"> 
-        {/*Menu*/}
-        <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Notes />} />
-      <Route path="/" element={<Users />} />
-    </Routes>
-  </BrowserRouter>
+     <section className="divi"> </section>
+           
+            <li className="nav-item">
+              <Link to='./' className="menutit">Contacto</Link>
+            </li>
+          </div>
         
-                
+    </div>
+</nav>
+      
+       
 
-                {/*Portada*/}
+              
             <section>
                  <h1 className="portatitu">
           <strong className="bold-text">Una forma nueva de conectar</strong>

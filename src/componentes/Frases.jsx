@@ -15,7 +15,7 @@ return(
         
                     </Col>
                     <Col>
-        <h1 class="desc"> {props.descripcion}</h1>
+        <h1 className="desc"> {props.descripcion}</h1>
                     </Col>
       </Row>
       

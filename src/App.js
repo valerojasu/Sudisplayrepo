@@ -8,11 +8,19 @@ import Indicadores from './componentes/Indicadores.jsx';
 import Contacto from './componentes/Contacto.jsx';
 import Numeros from './componentes/Numeros.jsx';
 import Footer from './componentes/Footer.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
+
+      <BrowserRouter>
       <Portada/>
+      <Routes>
+      <Route path='/' element= {Portada}/>
+        <Route path='/' element= {Frases}/>
+      </Routes>
+      
       <Quienes/>
       <Frases
       pregunta='¿Que ofrecemos al mercado?'
@@ -42,7 +50,7 @@ function App() {
   </section>
 
   <Footer/>
-
+  </BrowserRouter>
     </div>
   );
 }
