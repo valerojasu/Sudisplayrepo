@@ -4,8 +4,7 @@ import logo from '../Imagenes/Logo/Logoaba.png'
 import '../css/About.css'
 import Quienes from './Quienes'
 import Frases from './Frases'
-import Numeros from './Numeros'
-import Contacto from './Contacto'
+
 
 function About(){
     return(
@@ -39,12 +38,8 @@ function About(){
       descripcion='Nuestra app nos permite dar soluciones a la medida y brindar una información rápida y oportuna para la toma de decisiones.'
       />
     </div>
-    <section>
-      <Numeros/>
-    </section>
-    <section>
-      <Contacto></Contacto>
-    </section>
+ 
+   
   </div>
  
     );

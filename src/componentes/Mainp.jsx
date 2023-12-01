@@ -11,7 +11,7 @@ import Footer from './Footer';
 
 function Mainp(){
     return(
-<div className="App">
+<div>
   <div>
     <Portada/>
   </div>

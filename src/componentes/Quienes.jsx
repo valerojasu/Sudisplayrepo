@@ -34,9 +34,7 @@ return(
         className="fotoq"/>
                     </Col>
       </Row>
-      <Row>
      
-      </Row>
       
     </Container>
 
