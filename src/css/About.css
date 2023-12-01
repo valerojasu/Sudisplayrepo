@@ -1,0 +1,62 @@
+.logonav{
+    width: 7%;
+}
+.sonri{
+    width: 10%;
+}
+
+.menu{
+    background:  rgba(255, 249, 249, 0.619);
+    line-height: 1.8;    
+}
+ 
+.menuletras{
+        font-size: 1.3rem;
+        padding: auto;
+        align-items: center;
+        display: flex;
+        color: #104d80;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+
+}
+.menuletras:hover{
+    color: #bcd424;
+    cursor: pointer;  
+    text-decoration: none;  
+}
+.menuitem{
+        width: 100%;
+        display: inline-flex;
+        padding: 1% 3%;
+    
+
+}
+li{
+  list-style-type: none;  
+}
+
+.divi{
+    padding: 0% 1%;
+}
+
+.container-fluid{
+    display: flex;
+    width: 90%;
+    flex-wrap: inherit;
+    align-items: center;
+}
+
+
+.mainabout {
+    position: relative;
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    width: 100%;
+    height: 70rem;
+    background-color:transparent;
+    line-height: 1.8;
+}

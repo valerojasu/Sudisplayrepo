@@ -8,17 +8,4 @@ body{
   background-color: #f5f6f7;
 }
 
-.App{
-  display: flex;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
 
-
-.contactos{
-  width: 100%;
-  padding: 4%;
-  background-color: #bcd424ab;
-}

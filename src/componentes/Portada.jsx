@@ -19,7 +19,7 @@ function Portada(){
      <section className="divi"> </section>
            
             <li className="nav-item">
-              <Link to='./' className="menutit">Contacto</Link>
+              <Link to='./About' className="menutit">Contacto</Link>
             </li>
           </div>
         

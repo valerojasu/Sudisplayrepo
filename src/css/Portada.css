@@ -28,7 +28,7 @@
 .menutit:hover{
     color: #bcd424;
     cursor: pointer;  
-    text-decoration: noned;  
+    text-decoration: none;  
 }
 .menuitem{
         width: 100%;
