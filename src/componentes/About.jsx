@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import logo from '../Imagenes/Logo/Logoaba.png'
 import '../css/About.css'
 import '../css/Numeros.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Display1 from './Display1'
+import Contacto from './Contacto'
+import Footer from './Footer'
 
 function About(){
     return(
@@ -35,7 +37,7 @@ function About(){
       <Col>
       <h1 className="atitulo">Quienes Somos?</h1>
     
-    <p clclassNamess="parrafo1">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
+    <p classNamess="parrafo1">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
      
       Nuestra  relación comercial se basa en los más altos estándares de confidencialidad. 
       Complementamos  con una estrategia alineada con socio comercial.
@@ -45,49 +47,45 @@ function About(){
       <Col>
       <img src={require ('../Imagenes/Logo/Logoaba.png')} 
       className='logoabout'
-                    alt='Logo FIFCO'/></Col> 
+                    alt='Logo FIFCO'/>
+                    </Col> 
     </Row>
  
   </div>
-
   <section>
-    <Display1
+  <Display1
     pregunta='¿En que se especializa SuDisplay?'
     descripcion='Nuestra app nos permite dar soluciones a la medida y brindar una información rápida y oportuna para la toma de decisiones.'
     />
+  
 
   </section>
+  <section >
+    <Contacto />
+  </section>
+  <div className='quienes'>
+    <Row>
+      <Col>
+      <h1 className="atitulo">Contáctenos a nuestro WhatsApp</h1>
+    
+      <a className="parrafo1" href="https://api.whatsapp.com/send?phone=50670161730&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 7016-1730</a>
+
+     </Col>
+      <Col>
+      <h1 className="atitulo">Correo electrónico:</h1>
+    
+      <a href="mailto:sudisplay@gmail.com" className="parrafo1">sudisplay&#64;gmail.com</a>
+
+      </Col>
+    </Row>
+  
+  </div>
 
  
-  <div className="number">
-     <Container>
-      <Row>
-        <Col xs={1}>
-        </Col>
+  <div>
+    <Footer/>
+  </div>
 
-        <Col>
-        <p class="titulo">Contáctenos a nuestro WhatsApp</p>    
-        <a class="encima" href="https://api.whatsapp.com/send?phone=50670161730&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 7016-1730</a>
-        </Col>
-        </Row>
-        <br></br>
-        <Row>
-        <Col xs={1}>
-        </Col>
-        <Col>     
-        <p class="titulo">Correo electrónico:</p>    
-                    <a href="mailto:sudisplay@gmail.com" class="encima">sudisplay&#64;gmail.com</a>
-       </Col>
-
-        </Row>
-        
-      
-      
-    </Container>
-               
-                    
-  
-        </div>
 
   </div> 
     );
