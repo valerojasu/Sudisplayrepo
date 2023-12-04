@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 
-function Contacto() {
+function Contacto(ref) {
   return (
     <div className="project">
         <h1 className="letrat"> Contacto</h1>
@@ -52,7 +52,7 @@ function Contacto() {
       <Row>
       <Col>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Cuentenos de su proyecto</Form.Label>
+        <Form.Label className="letraf">Cuentenos de su proyecto</Form.Label>
         <Form.Control as="textarea" rows={3} placeholder="Ingrese su mensaje"
 />
       </Form.Group>

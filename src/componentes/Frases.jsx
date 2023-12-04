@@ -18,6 +18,26 @@ return(
         <h1 className="desc"> {props.descripcion}</h1>
                     </Col>
       </Row>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      
+      <Row>
+        <Col>
+        <img src={require('../Imagenes/Disp1.png')} className="fotodispl" alt="Display1"/>
+        </Col>
+        <Col>
+        <img src={require('../Imagenes/Disp2.png')} className="fotodispl" alt="Display2"/>
+
+        </Col>
+        <Col>
+        <img src={require('../Imagenes/Disp3.png')} className="fotodispl" alt="Display3"/>
+
+        </Col>
+      </Row>
       
     </Container>
 

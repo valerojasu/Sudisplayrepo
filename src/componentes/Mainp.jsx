@@ -1,5 +1,6 @@
 import React from 'react'
 import Portada from './Portada';
+import '../css/Portada.css'
 import Quienes from './Quienes';
 import Indicadores from './Indicadores';
 import Frases from './Frases';
@@ -7,12 +8,15 @@ import Marcas from './Marcas';
 import Contacto from './Contacto';
 import Numeros from './Numeros';
 import Footer from './Footer';
+import Display1 from './Display1';
 
 
 function Mainp(){
+ 
     return(
 <div>
   <div>
+
     <Portada/>
   </div>
 
@@ -20,7 +24,7 @@ function Mainp(){
   <Quienes/>
   </div>
     <div>
-      <Frases
+      <Display1
       pregunta='¿Que ofrecemos al mercado?'
       descripcion='Con disciplina comercial, ofrecemos estos y más indicadores para garantizar la continuidad de la operación.'
       />
