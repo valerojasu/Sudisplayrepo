@@ -70,19 +70,22 @@
 }
 @media screen and (min-width: 500px) and (max-width: 1500px) {
     .project{
-        height: 80vh;
+        height: 100vh;
         font-weight: bold;
        
     }
     
     .letraf{
         font-size: 0.7rem;
+        
        
     }
     
     .letrat{
         
         font-size: 1.8rem;
+        font-weight: bold;
+
         
     }
   
