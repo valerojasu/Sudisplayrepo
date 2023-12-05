@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../Imagenes/Logo/Logoaba.png'
 import '../css/About.css'
-import '../css/Numeros.css';
 import { Row, Col } from 'react-bootstrap';
 import Display1 from './Display1'
 import Contacto from './Contacto'
@@ -37,7 +36,7 @@ function About(){
       <Col>
       <h1 className="atitulo">Quienes Somos?</h1>
     
-    <p classNamess="parrafo1">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
+    <p className="parrafo1">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
      
       Nuestra  relación comercial se basa en los más altos estándares de confidencialidad. 
       Complementamos  con una estrategia alineada con socio comercial.

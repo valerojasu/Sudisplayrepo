@@ -1,15 +1,13 @@
 .frase{ 
     width: 100%;
     height: auto;
-    margin-top: 2%;
     padding: 8% 0%;
     color: white;
     background: rgb(19, 25,49 , 0.9) url(https://img.freepik.com/foto-gratis/resumen-difuminado-supermercado-grandes-almacenes_1203-8782.jpg?w=2000&t=st=1701109758~exp=1701110358~hmac=a89dbe3e261f8a3eb324b4e2c433d0fc41f5ea485d81850fc00181e965142168);
     background-position: 0% 50%;
     background-size: cover;
-    align-content: center;
+    align-items: center;    
     display: flex;
-    font-weight: bold;
     text-transform: uppercase;
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -18,10 +16,15 @@
 
 .titulo{
     font-size: 2rem;
+    font-weight: bold;
+
     
 }
 .desc{
     font-size: 1.5rem;
+    font-weight: bold;
+
+
 
 }
 
@@ -29,4 +32,55 @@
     width: 90%;
     height: auto;
     margin: auto;
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .frase{ 
+    
+        height: 80vh;
+        padding: 15% 5%;
+
+        
+    }
+    
+    .titulo{
+        font-size: 0.8rem;
+        
+    }
+    .desc{
+        font-size: 0.8rem;
+    
+    }
+    
+    .fotodispl{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+    .frase{ 
+    
+        height: 100vh;
+        padding: 15% 5%;
+
+        
+    }
+    
+    .titulo{
+        font-size: 0.8rem;
+        
+    }
+    .desc{
+        font-size: 0.8rem;
+    
+    }
+    
+    .fotodispl{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    
 }

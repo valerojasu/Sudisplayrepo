@@ -1,6 +1,6 @@
 .project{
     width: 90%;
-    height: 53vh;
+    height: 100vh;
     padding: 6%;
     margin-bottom: 10%;
     color: black;
@@ -38,4 +38,57 @@
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.placeholder{
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .project{
+        height: 70vh;
+        font-weight: bold;
+       
+    }
+    
+    .letraf{
+        font-size: 0.5rem;
+       
+    }
+    
+    .letrat{
+        
+        font-size: 1.5rem;
+        
+    }
+  
+    .button {
+       
+        font-size: 0.5rem;
+       
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1500px) {
+    .project{
+        height: 80vh;
+        font-weight: bold;
+       
+    }
+    
+    .letraf{
+        font-size: 0.7rem;
+       
+    }
+    
+    .letrat{
+        
+        font-size: 1.8rem;
+        
+    }
+  
+    .button {
+       
+        font-size: 0.7rem;
+       
+    }
 }

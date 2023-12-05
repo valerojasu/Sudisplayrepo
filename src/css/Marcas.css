@@ -25,7 +25,7 @@
     scroll-snap-align: center;
 }
 
-@media screen and (min-width: 100px) and (max-width: 499px){
+@media screen and (min-width: 100px) and (max-width: 599px){
 
 
     .marcat{
@@ -42,16 +42,15 @@
    
 
 }
-@media screen and (min-width: 500px) and (max-width: 1000px){
+@media screen and (min-width: 600px) and (max-width: 1300px){
    
     .marcat{
     
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
       
     .Logof {
-        width: 80%;  
-        margin: 8% 0%;
+        width: 70%;  
       
     }
 

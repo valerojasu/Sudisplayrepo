@@ -17,7 +17,6 @@ function Contacto(ref) {
         <InputGroup>
         <h1 className="letraf">Nombre</h1>
         <Form.Control
-          placeholder="John"
           aria-label="Username"
           aria-describedby="basic-addon1"
         />
@@ -26,7 +25,6 @@ function Contacto(ref) {
       <InputGroup>
       <h1 className="letraf">Apellido</h1>
         <Form.Control
-          placeholder="Doe"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
         />
@@ -40,7 +38,6 @@ function Contacto(ref) {
         <h1 className="letraf">Correo Electrónico</h1>
         <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
         <Form.Control
-          placeholder="ejemplo@hotmail.com"
           aria-label="Username"
           aria-describedby="basic-addon1"
         />
@@ -53,8 +50,7 @@ function Contacto(ref) {
       <Col>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label className="letraf">Cuentenos de su proyecto</Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder="Ingrese su mensaje"
-/>
+        <Form.Control as="textarea" rows={3}/>
       </Form.Group>
       </Col>
       </Row>
