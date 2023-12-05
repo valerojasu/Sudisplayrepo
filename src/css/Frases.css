@@ -1,9 +1,9 @@
 .frase{ 
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 8% 0%;
     color: white;
-    background: rgb(19, 25,49 , 0.9) url(https://img.freepik.com/foto-gratis/resumen-difuminado-supermercado-grandes-almacenes_1203-8782.jpg?w=2000&t=st=1701109758~exp=1701110358~hmac=a89dbe3e261f8a3eb324b4e2c433d0fc41f5ea485d81850fc00181e965142168);
+    background: rgb(19, 25,49 , 0.9) url(../Imagenes/pasillo.jpg);
     background-position: 0% 50%;
     background-size: cover;
     align-items: center;    
@@ -29,9 +29,7 @@
 }
 
 .fotodispl{
-    width: 90%;
-    height: auto;
-    margin: auto;
+    width: 100%;
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
@@ -51,18 +49,12 @@
         font-size: 0.8rem;
     
     }
-    
-    .fotodispl{
-        width: 90%;
-        height: auto;
-        margin: auto;
-    }
+   
     
 }
 @media screen and (min-width: 600px) and (max-width: 1400px) {
     .frase{ 
-    
-        height: 100vh;
+        height: 140vh;
         padding: 15% 5%;
 
         
@@ -76,11 +68,10 @@
         font-size: 0.8rem;
     
     }
-    
     .fotodispl{
-        width: 90%;
+        width: 100%;
         height: auto;
-        margin: auto;
     }
+
     
 }

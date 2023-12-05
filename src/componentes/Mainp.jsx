@@ -38,7 +38,6 @@ function Mainp(){
     <Frases
     pregunta='¿Que nos caracteriza de las otras empresas?'
     descripcion='Nuestra app nos permite dar soluciones a la medida y brindar una información rápida y oportuna para la toma de desiciones'
-    imagen='Disp1'
     />
   </div>
 <div>

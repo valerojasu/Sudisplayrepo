@@ -27,10 +27,10 @@ return(
       
       <Row>
         <Col>
-        <img src={require('../Imagenes/Disp1.png')} className="fotodispl" alt="Display1"/>
+        <img src={require('../Imagenes/Disp11.png')} className="fotodispl" alt="Display1"/>
         </Col>
         <Col>
-        <img src={require('../Imagenes/Disp2.png')} className="fotodispl" alt="Display2"/>
+        <img src={require('../Imagenes/Disp22.png')} className="fotodispl" alt="Display2"/>
 
         </Col>
         <Col>
