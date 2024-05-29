@@ -59,6 +59,7 @@ function About(){
   
 
   </section>
+
   <section >
     <Contacto />
   </section>
@@ -67,13 +68,13 @@ function About(){
       <Col>
       <h1 className="atitulo">Contáctenos a nuestro WhatsApp</h1>
     
-      <a className="parrafo1" href="https://api.whatsapp.com/send?phone=50670161730&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 7016-1730</a>
+      <a className="encimac" href="https://api.whatsapp.com/send?phone=50670161730&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 7016-1730</a>
 
      </Col>
       <Col>
-      <h1 className="atitulo">Correo electrónico:</h1>
+      <h1 className="atitulo">Correo electrónico</h1>
     
-      <a href="mailto:sudisplay@gmail.com" className="parrafo1">sudisplay&#64;gmail.com</a>
+      <a href="mailto:sudisplay@gmail.com" className="encimac">sudisplay&#64;gmail.com</a>
 
       </Col>
     </Row>

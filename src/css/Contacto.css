@@ -1,9 +1,11 @@
 .project{
     width: 90%;
-    height: 100vh;
+    height: 55vh;
     padding: 6%;
     margin-bottom: 10%;
     color: black;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
     background-color: #fff;
 }
 

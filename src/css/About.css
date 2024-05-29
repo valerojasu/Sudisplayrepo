@@ -62,7 +62,6 @@ li{
     width: 100%;
     font-size: 2.8rem;
     line-height: 1;
-    text-align: left;
     font-family: 'Raleway', sans-serif;
     margin: 2% 0%;
 }
@@ -73,12 +72,31 @@ li{
     color: black;
 }
 
+.encimac{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.encimac:hover{
+    color: #889c07;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: none;
+
+}
+
 .a{
     color: black;
 }
 
 .quienes{
     width: 100%;
+    text-align: center;
     color: black;
     padding: 10% 7%;
    

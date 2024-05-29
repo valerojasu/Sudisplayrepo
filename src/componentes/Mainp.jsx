@@ -9,7 +9,7 @@ import Contacto from './Contacto';
 import Numeros from './Numeros';
 import Footer from './Footer';
 import Display1 from './Display1';
-
+import QuoteSlideshow from '../QuoteSlideshow';
 
 function Mainp(){
  
@@ -43,6 +43,9 @@ function Mainp(){
 <div>
 <Marcas/>
 </div>
+<section>
+      <QuoteSlideshow />
+</section>
 
 
 

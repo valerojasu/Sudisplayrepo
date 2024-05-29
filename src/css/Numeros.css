@@ -1,23 +1,29 @@
 .number{
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     padding: 25% 6%;
     background-color:white;
-    height: 80vh;
-    text-decoration: none;
+    height: 55vh;
+    text-transform: uppercase;
 }
 
 .encima{
     font-size: 1.3rem;
     color: black;
+    cursor:alias;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
     text-decoration: none;
+
 }
 
 .encima:hover{
-    color: #282c54;
-    text-decoration: underline;
+    color: #889c07;
     cursor: pointer;
+    text-decoration: none;
+    text-transform: none;
+
 }
 
 .titulo{

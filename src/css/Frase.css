@@ -1,0 +1,28 @@
+.frasebody{ 
+    width: 100%;
+    padding:0%;
+    height: 70vh;
+    color: white;
+    background: rgb(19, 25,49 , 0.9) url(../Imagenes/Por3.jpg);
+    background-position: 0% 20%;
+    background-size:cover;
+    align-items: center;    
+    display: flex;
+    text-transform: uppercase;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulofrase{
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    font-size: 1.7rem;
+    margin-top: 3%;
+}
+.descfras{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20%;
+}
