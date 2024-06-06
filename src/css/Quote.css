@@ -17,7 +17,7 @@
     max-width: 80%; /* Ajusta el ancho según sea necesario */
     margin: 0 auto;
     padding: 5% 1%;
-    height: 40vh;
+    height: 50vh;
     background-color: rgb(245, 254, 254);
     border: 1px solid #ededed;
     border-radius: 8px;
@@ -68,7 +68,6 @@
   
 .avatar {
     width: 100%; /* Esto asegurará que la imagen se ajuste al contenedor */
-    height: 100%; /* Esto asegurará que la imagen se ajuste al contenedor */
 }
 
 .tituloh1{
@@ -77,11 +76,11 @@
     padding-bottom: 2%;
 }
 
-@media screen and (min-width: 101px) and (max-width: 800px) {
+@media screen and (min-width: 101px) and (max-width: 500px) {
 /* Quote. */
 /* Estilos para el contenedor de la cita y los botones */
 .quote-container { 
-    height: 30vh;
+    height: 25vh;
     max-width: 90%; /* Ajusta el ancho según sea necesario */
 
 
@@ -99,9 +98,11 @@
     font-size: 0.7rem;
 
 }
-.avatar-container { 
-    width: 100px; /* Ajusta el tamaño del contenedor según tus necesidades */
-}
+.avatar-container {
+    width: 50px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    height: 50px;
+   
+  }
 
 .prev {
     left: -1%; /* Ajusta la posición izquierda */
@@ -112,6 +113,43 @@
 }
 
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    /* Quote. */
+    /* Estilos para el contenedor de la cita y los botones */
+    .quote-container { 
+        height: 30vh;
+        max-width: 90%; /* Ajusta el ancho según sea necesario */
+    
+    
+    } 
+    
+    .quote-text{
+            font-size: 0.8rem;
+        
+    }
+    .quote-author{
+        font-size: 0.9rem;
+    
+    }
+    .quote-time{
+        font-size: 0.7rem;
+    
+    }
+    .avatar-container {
+        width: 70px; /* Ajusta el tamaño del contenedor según tus necesidades */
+        height: 70px;
+       
+      }
+    
+    .prev {
+        left: -1%; /* Ajusta la posición izquierda */
+    }
+      
+    .next {
+        right: -1%; /* Ajusta la posición derecha */
+    }
+    
+    }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
     /* Quote. */
     /* Estilos para el contenedor de la cita y los botones */

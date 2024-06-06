@@ -16,6 +16,12 @@
 .frasel{
     width: 10%;
 }
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    display: inline;
+    align-content: space-around;
+}
 .titulo2{
     font-weight: bold;
     text-align: center;
@@ -77,6 +83,7 @@
     }
     
     .titulo2{
+        margin-top: 0%; 
         font-size: 1rem;
         
     }
@@ -102,12 +109,12 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1200px) {
      .frase{ 
-        height: 85vh;
         padding: 0%;
     }
 
     .titulo2{
-        font-size: 1.2rem;   
+        font-size: 1.2rem;  
+        margin-top: 1%; 
     }
     .colt{
         width: 100%;

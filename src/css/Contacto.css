@@ -13,8 +13,9 @@
     font-size: 0.8rem;
     margin:2% 0%;
     width: 100%;
-    font-weight: 100%;
     letter-spacing: 3px;
+    font-weight: bold;
+
 }
 
 .letrat{
@@ -46,21 +47,32 @@
     font-size: 0.5rem;
 }
 
+.contactos{
+    width: 100%;
+    display: flex;
+    padding: 4%;
+    background-color: #bcd424ab;
+}
+
 @media screen and (min-width: 100px) and (max-width: 500px) {
     .project{
-        height: 70vh;
+        height: 65vh;
         font-weight: bold;
-       
+        width: 100%;
+        display: inline-flex;
     }
     
     .letraf{
-        font-size: 0.5rem;
-       
+        font-size: 0.6rem;
+        font-weight: bold;
     }
     
     .letrat{
         
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        display: inline-flex;
+        align-items: center;
+
         
     }
   

@@ -1,6 +1,7 @@
 import React from 'react'
 import Portada from './Portada';
 import '../css/Portada.css'
+import '../css/Contacto.css'
 import Quienes from './Quienes';
 import Indicadores from './Indicadores';
 import Frases from './Frases';
@@ -10,6 +11,8 @@ import Numeros from './Numeros';
 import Footer from './Footer';
 import Display1 from './Display1';
 import QuoteSlideshow from '../QuoteSlideshow';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Mainp(){
  
@@ -50,19 +53,21 @@ function Mainp(){
 
 
 <section className="contactos">
-<section className="container">
-<aside className="row">
-  <section className="col">
+<Container>
+  <Row>
+    <Col>
     <Contacto/>
-  </section>
-    <section className="col">
-      <Numeros/>
-    </section>
-</aside>
-</section>
-</section>
+    </Col>
+    <Col>
+    <Numeros/>
+    </Col>
+  </Row>
+</Container>
 
+
+</section>
 <Footer/>
+
 </div>
 
  
