@@ -8,7 +8,7 @@
 .titu1{
     margin: 8% 0%;
     padding: 0%;
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1;
     text-align: center;
 }
@@ -32,7 +32,6 @@
 
 .fotoq{
     width: 83%;
-    text-align: center;
     margin-left: 10%;
 }
 
@@ -40,76 +39,166 @@
 
 .infor{ 
     background-color: white;
-    width: 100%;
+    padding: 0%;    
     margin: 6% 0%;    
     align-items: center;
 }
 
+.container, .container-sm {
+    max-width: 1400px;
+}
+
+
 @media screen and (min-width: 100px) and (max-width: 600px) {
     .parra{
-        font-size: 0.8rem;
-        padding: 0% 3%;
+        font-size: 0.7rem;
+        padding: 0% 6%;
         
     }
     .titu1{
         margin: 8% 0%;
-        font-size: 1.3rem;
+        font-size: 1rem;
       
     }
     
     /* titulo puesto*/
     
     .titu2{
-        font-size: 1rem;
+        font-size: 0.7rem;
+        margin: 4% 6% 0%;
     }
     
     .titu3{
         font-size: 0.7rem;
+        margin: 1% 6% 3%;
        
     }
     
     .fotoq{
-        width: 70%;
-        margin-bottom: 7%;
-       
+        max-width: 60%;
+        justify-content: center;
+        display: inline-flex;
+   
     }
-    
-    /*Genera*/
-    
-    .infor{ 
-        background-color: white;
+    .colt{
         width: 100%;
-        margin: 3% 0%;
-        align-items: center;
+    }  
+    
+    .container {
+        max-width: 500px;
     }
     
 }
-@media screen and (min-width: 601px) and (max-width: 1500px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .parra{
+        font-size: 0.8rem;
+        padding: 0% 6% 3%;
+        
+    }
+    .colt{
+        width: 100%;
+    }
+    .colf{
+        width: 50%;
+    }
+
+    .titu1{
+        margin: 5% 0% 2%;
+        font-size: 1.4rem;
+      
+    }
+    
+    /* titulo puesto*/
+    
+    .titu2{
+        font-size: 0.7rem;
+        width: 40%;
+    }
+    
+    .titu3{
+        font-size: 0.7rem;
+        width: 30%;
+       
+    }
+    
+    .fotoq{
+        width: 80%;    
+    }
+      
+    .container {
+        max-width: 601px;
+    }
+
+    
+}
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .infor{ 
+        margin: 3% 0%;    
+        align-items: center;
+    }
+   
     .parra{
         font-size: 0.8rem;
         
     }
     .titu1{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       
     }
-    
+
     /* titulo puesto*/
     
     .titu2{
         margin-top: 5%;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .titu3{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
        
     }
-    
-    .fotoq{
-        width: 100%;
-        margin-bottom: 7%;
-       
+
+    .container {
+        max-width: 801px;
     }
     
 }
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .container {
+        max-width: 1001px;
+    }
+    .infor{ 
+        margin: 3% 0%;    
+        align-items: center;
+    }
+   
+    .parra{
+        font-size: 0.8rem;
+        
+    }
+    .titu1{
+        font-size: 1.5rem;
+      
+    }
+
+    /* titulo puesto*/
+    
+    .titu2{
+        margin-top: 5%;
+        font-size: 0.9rem;
+    }
+    .titu3{
+        font-size: 0.6rem;
+       
+    }
+    
+    
+}
+@media screen and (min-width: 1201px) and (max-width: 1401px) {
+    .container {
+        max-width: 1101px;
+    }
+    
+    
+}
+

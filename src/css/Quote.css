@@ -17,7 +17,6 @@
     max-width: 80%; /* Ajusta el ancho según sea necesario */
     margin: 0 auto;
     padding: 5% 1%;
-    width: 100%;
     height: 40vh;
     background-color: rgb(245, 254, 254);
     border: 1px solid #ededed;
@@ -50,6 +49,7 @@
         font-size: 1.4rem;
         text-align: center;
         display: flex;
+        margin: 1%;
         align-items: center;
         justify-content: center;
 }
@@ -70,11 +70,82 @@
     width: 100%; /* Esto asegurará que la imagen se ajuste al contenedor */
     height: 100%; /* Esto asegurará que la imagen se ajuste al contenedor */
 }
-  
-
 
 .tituloh1{
     color: aliceblue;
     text-align: center;
     padding-bottom: 2%;
 }
+
+@media screen and (min-width: 101px) and (max-width: 800px) {
+/* Quote. */
+/* Estilos para el contenedor de la cita y los botones */
+.quote-container { 
+    height: 30vh;
+    max-width: 90%; /* Ajusta el ancho según sea necesario */
+
+
+} 
+
+.quote-text{
+        font-size: 0.8rem;
+    
+}
+.quote-author{
+    font-size: 0.9rem;
+
+}
+.quote-time{
+    font-size: 0.7rem;
+
+}
+.avatar-container { 
+    width: 100px; /* Ajusta el tamaño del contenedor según tus necesidades */
+}
+
+.prev {
+    left: -1%; /* Ajusta la posición izquierda */
+}
+  
+.next {
+    right: -1%; /* Ajusta la posición derecha */
+}
+
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    /* Quote. */
+    /* Estilos para el contenedor de la cita y los botones */
+    .quote-container { 
+        height: 35vh;
+        max-width: 90%; /* Ajusta el ancho según sea necesario */
+    
+    
+    } 
+    
+    .quote-text{
+            font-size: 1rem; 
+            padding: 0% 2%;
+    }
+
+    .quote-author{
+        font-size: 0.9rem;
+    
+    }
+    .quote-time{
+        font-size: 0.9rem;
+    
+    }
+    .avatar-container { 
+        width: 100px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    }
+    
+    .prev {
+        left: 1%; /* Ajusta la posición izquierda */
+    }
+      
+    .next {
+        right: 1%; /* Ajusta la posición derecha */
+    }
+    
+    }
+

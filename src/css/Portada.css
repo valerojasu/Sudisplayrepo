@@ -81,10 +81,8 @@ li{
 @media screen and (min-width: 100px) and (max-width: 600px) {
     /*Nav*/
     .logonav{
-        width:10%;
-    
-    }
-        
+        width: 18%;
+    }   
     .menutit{
         font-size: 0.5rem;
     }
@@ -92,11 +90,11 @@ li{
 
     /*Portada*/
     .main {
-        height: 60vh;
+        height: 30vh;
         
     }
     .portatitu{
-        font-size: 1rem;  
+        font-size: 0.7rem;  
         width: 50%;
   
     }
@@ -104,52 +102,49 @@ li{
 }
 
 @media screen and (min-width: 601px) and (max-width: 899px) {
-    /*Nav*/
-    .logonav{
-        width:15%;
-    
-    }
-        
-    .menutit{
-        font-size: 0.8rem;
-    }
+   /*Nav*/
+   .logonav{
+    width: 18%;
+}   
+.menutit{
+    font-size: 0.6rem;
+}
 
+
+/*Portada*/
+.main {
+    height: 44vh;
     
-    /*Portada*/
-    .main {
-        height: 70vh;
-        
-    }
-    .portatitu{
-        font-size: 1.3rem;  
-        width: 50%;
-  
-    }
+}
+.portatitu{
+    font-size: 1.2rem;  
+    width: 40%;
+
+}
+
     
 }
 @media screen and (min-width: 900px) and (max-width: 1500px){
 
    
+    /*Nav*/
     .logonav{
-        width:15%;
-    
-    }
-        
+        width: 15%;
+    }   
     .menutit{
         font-size: 1rem;
     }
-   
- 
-   /*Portada*/
-   .main {
-       height: 35rem;
-       
-   }
-   
-   .portatitu{
-    font-size: 2rem;  
-    width: 36%;
-    margin-bottom: 4%;   
+    
+    
+    /*Portada*/
+    .main {
+        height: 65vh;
+        
+    }
+    .portatitu{
+        font-size: 1.5rem;  
+        width: 40%;
+    
     }
    
 }

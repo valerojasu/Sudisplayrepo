@@ -67,33 +67,17 @@
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
     .frase{ 
-    
-        height: 80vh;
+        height: 70vh;
         padding: 10% 5%;
+        display: flex;   
+    }
 
-        
+    .colt{
+        width: 100%;
     }
     
-    .titulo{
-        font-size: 0.8rem;
-        
-    }
-    .desc{
-        font-size: 0.8rem;
-    
-    }
-   
-    
-}
-@media screen and (min-width: 600px) and (max-width: 1400px) {
-    .frase{ 
-        padding: 10% 5%;
-
-        
-    }
-    
-    .titulo{
-        font-size: 0.8rem;
+    .titulo2{
+        font-size: 1rem;
         
     }
     .desc{
@@ -102,7 +86,46 @@
     }
     .fotodispl{
         width: 100%;
-        height: auto;
+    }
+ 
+    
+    .slideshow{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .slick-slide img{
+          height: 40vh;      
+    }
+   
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+     .frase{ 
+        height: 85vh;
+        padding: 0%;
+    }
+
+    .titulo2{
+        font-size: 1.2rem;   
+    }
+    .colt{
+        width: 100%;
+    }
+    
+
+    .desc{
+        font-size: 1rem;
+        text-align: center;
+    
+    }
+    .fotodispl{
+        width: 100%;
+    }
+ 
+   
+    .slick-slide img{
+          height: 50vh;      
     }
 
     

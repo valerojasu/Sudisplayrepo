@@ -11,7 +11,7 @@ return(
             <Container>
       <Row>
       
-        <Col xs={5}>
+        <Col xs={5} className="colt">
         <h1 className="titulo2" >{props.pregunta}</h1>
         <br>
         </br>
@@ -21,7 +21,7 @@ return(
       
        
        
-      <Col xs={6}>
+      <Col xs={6}className="colt" >
       
       <Slideshow />       
 </Col> 

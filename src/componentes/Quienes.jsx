@@ -8,7 +8,7 @@ return(
         <div className="infor">
             <Container>
       <Row>
-      <Col sm={4}>
+      <Col sm={4} className="colt">
       <h1 className="titu1">¿Quienes somos?</h1>
        <p className="parra">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
           Nuestra  relación comercial se basa en los más altos estándares de confidencialidad. Complementamos  con una estrategia alineada con socio comercial.
@@ -16,7 +16,7 @@ return(
           Iniciamos nuestras operaciones en el 2022.</p>
        </Col>
       
-        <Col sm={4}>
+        <Col sm={4} className="colf" >
         <p className="titu2"> David Vargas</p>
         <p className="titu3"> Gerente Financiero </p>
         <img  
@@ -25,7 +25,7 @@ return(
         className="fotoq"/>
          </Col>
 
-        <Col sm={4}>
+        <Col sm={4} className="colf">
         <p className="titu2"> Carlos Gutiérrez</p>
         <p className="titu3"> Gerente comercial </p>
         <img  
