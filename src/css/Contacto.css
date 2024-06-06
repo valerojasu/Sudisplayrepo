@@ -134,3 +134,19 @@
 
   
 }
+
+@media screen and (min-width: 1101px) and (max-width: 1800px) {
+   
+
+
+    .letraf{
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    
+    .letrat{
+        font-size: 3rem;
+    }
+
+  
+}
