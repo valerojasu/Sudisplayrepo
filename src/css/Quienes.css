@@ -80,12 +80,16 @@
         display: inline-flex;
    
     }
-    .colt{
-        width: 100%;
-    }  
+
     
     .container {
         max-width: 500px;
+    }
+    .colt{
+        width: 100%;
+    }
+    .colf{
+        width: 100%;
     }
     
 }
