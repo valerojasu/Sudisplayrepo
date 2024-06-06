@@ -76,7 +76,7 @@
         
     }
     .container{
-        max-width: 801px;
+        max-width: 501px;
     }
    
 }
@@ -85,6 +85,8 @@
         height: 50vh;
         font-weight: bold;
         width: 100%;
+        display: inline-flex;
+
     }
     
     .letraf{
