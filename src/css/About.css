@@ -103,53 +103,85 @@ li{
 }
 
 .logoabout{
-    width: 80%;
+    width: 100%;
     padding: 3% 15%;
+}
+.col-sm-4 {
+    display: inline-grid;        
+    align-items: center;    
 }
 
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
     /*Nav*/
     .logonav{
-        width:10%;
+        width: 30%;
     
     }
-        
+    
     .menuletras{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .col-sm-7 {
+        width:100%;
+    }
+    .col-sm-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;    
     }
    
 
     /*Quienes?*/
 
     .atitulo{
-        font-size: 0.8rem;
+        font-size: 1rem;
        
     }
     
     .parrafo1{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
+        width: 100%;
     }
   
-   
-    
     .logoabout{
-        width: 80%;
+        width: 60%;
     }
+    .encimac{
+        font-size: 0.7rem;
+       
+    }
+
+    .quienes{
+        display: inline-flex;
+
+    }
+
+   
     
    
     
 }
 
-@media screen and (min-width: 601px) and (max-width: 1499px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
     /*Nav*/
     .logonav{
-        width:15%;
+        width: 30%;
     
     }
-        
+    
     .menuletras{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .col-sm-7 {
+        width:100%;
+    }
+    .col-sm-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;    
     }
 
     
@@ -158,21 +190,57 @@ li{
 
     .atitulo{
         font-size: 1rem;
-        font-weight: bold;
-        
        
     }
     
     .parrafo1{
-        font-size: 0.8rem;
-
+        font-size: 0.7rem;
+        width: 100%;
     }
   
-   
-    
     .logoabout{
-        width: 90%;
+        width: 60%;
     }
     
     
+}
+
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+    /*Nav*/
+    .logonav{
+        width: 30%;
+    
+    }
+    
+    .menuletras{
+        font-size: 0.7rem;
+    }
+
+    
+    
+    /*Quienes?*/
+
+    .atitulo{
+        font-size: 1rem;
+       
+    }
+    
+    .parrafo1{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+  
+    .logoabout{
+        width: 100%;
+        
+    }
+    .col-sm-4 {
+        width: 50%;
+        display: inline-grid;        
+        align-items: center;    
+    }
+    .col-sm-7 {
+        width:50%;
+    }
+  
 }

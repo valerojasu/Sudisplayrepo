@@ -33,7 +33,7 @@ function About(){
   <div className='quienes'>
 
     <Row>
-      <Col>
+      <Col sm={7}>
       <h1 className="atitulo">Quienes Somos?</h1>
     
     <p className="parrafo1">SuDisplay 2.0 es su socio comercial, cumplimos nuestros valores con excelencia y conocimiento del mercado, entendiendo sus necesidades y tendencias actuales. 
@@ -43,7 +43,7 @@ function About(){
     Nuestra mezcla de experiencia del equipo humano con más de 25 años en consumo masivo y  las ideas de  nuevas generaciones nos dan una ventaja competitiva!   
      Iniciamos nuestras operaciones en el 2022.</p>
       </Col>
-      <Col>
+      <Col sm={4}>
       <img src={require ('../Imagenes/Logo/Logoaba.png')} 
       className='logoabout'
                     alt='Logo FIFCO'/>
@@ -61,17 +61,17 @@ function About(){
   </section>
 
   <section >
-    <Contacto />
+    <Contacto/>
   </section>
   <div className='quienes'>
     <Row>
-      <Col>
+      <Col sm={6}>
       <h1 className="atitulo">Contáctenos a nuestro WhatsApp</h1>
     
       <a className="encimac" href="https://api.whatsapp.com/send?phone=50670161730&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 7016-1730</a>
 
      </Col>
-      <Col>
+      <Col sm={6}>
       <h1 className="atitulo">Correo electrónico</h1>
     
       <a href="mailto:sudisplay@gmail.com" className="encimac">sudisplay&#64;gmail.com</a>
