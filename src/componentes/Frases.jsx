@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap"; // Usamos Carousel de react-bootstrap
 import '../css/Frases.css';
-import Disp1 from '/Users/valerojas/Desktop/React- SuDisplay2/sudisplay/src/Imagenes/Display/Dis1.png';
+import Disp1 from 'src/Imagenes/Display/Dis1.png';
 import Disp2 from '/Users/valerojas/Desktop/React- SuDisplay2/sudisplay/src/Imagenes/Display/Dis2.png';
 import Disp3 from '/Users/valerojas/Desktop/React- SuDisplay2/sudisplay/src/Imagenes/Display/Dis3.png';
 import Disp4 from '/Users/valerojas/Desktop/React- SuDisplay2/sudisplay/src/Imagenes/Display/Dis4.png';
