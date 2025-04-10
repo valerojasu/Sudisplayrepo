@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap"; // Usamos Carousel de react-bootstrap
 import '../css/Frases.css';
-import Disp1 from 'src/Imagenes/Display/Dis1.png';
-import Disp2 from 'src/Imagenes/Display/Dis2.png';
-import Disp3 from 'src/Imagenes/Display/Dis3.png';
-import Disp4 from 'src/Imagenes/Display/Dis4.png';
-import Disp5 from 'src/Imagenes/Display/Dis5.png';
-import Disp6 from 'src/Imagenes/Display/Dis6.png';
-import Disp7 from 'src/Imagenes/Display/Dis7.png';
-import Disp8 from 'src/Imagenes/Display/Dis8.png';
-import Disp9 from 'src/Imagenes/Display/Dis9.png';
+import Disp1 from '../Imagenes/Display/Dis1.png';
+import Disp2 from '../Imagenes/Display/Dis2.png';
+import Disp3 from '../Imagenes/Display/Dis3.png';
+import Disp4 from '../Imagenes/Display/Dis4.png';
+import Disp5 from '../Imagenes/Display/Dis5.png';
+import Disp6 from '../Imagenes/Display/Dis6.png';
+import Disp7 from '../Imagenes/Display/Dis7.png';
+import Disp8 from '../Imagenes/Display/Dis8.png';
+import Disp9 from '../Imagenes/Display/Dis9.png';
 function Frases(props) {
   return (
     <div className="frase">
