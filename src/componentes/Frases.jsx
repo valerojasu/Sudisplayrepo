@@ -16,13 +16,13 @@ function Frases(props) {
       <Container>
         <Row className="frase-row">
           {/* Columna para el texto */}
-          <Col xs={12} md={6} className="col-text">
+          <Col className="col-text">
             <h1 className="titulo2">{props.pregunta}</h1>
             <h2 className="desc">{props.descripcion}</h2>
           </Col>
 
           {/* Columna para el Slider usando Carousel */}
-          <Col xs={12} md={6} className="col-slider">
+          <Col className="col-slider">
             <Carousel interval={3000} controls={false} indicators={true} fade>
               <Carousel.Item>
                 <img src={Disp1} alt="Imagen 1" className="slide-image" />
