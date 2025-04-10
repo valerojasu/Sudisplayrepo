@@ -1,45 +1,60 @@
-.indi{
+.indi {
     background-color: #bed226;
     margin: 1%;
     border-radius: 5%;
-    align-content: center;
-    border: solid  #bcd310;
+    border: solid #bcd310;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.indif{
+.indif {
     font-size: 1.2em;
     text-align: center;
     padding: 3%;
     color: black;
     font-family: 'Poppins', sans-serif;
-
 }
 
+.infor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media screen and (min-width: 100px) and (max-width: 599px){
-   
-    .indi{
-        margin: 2.5%;        
+/* Media Queries para pantallas pequeñas (móviles) */
+@media screen and (max-width: 599px) {
+    .indi {
+        margin: 2.5%;
+        width: 95%; /* Hace que las tarjetas ocupen todo el ancho en pantallas pequeñas */
     }
-    
-    .indif{
-        font-size: 0.6em;
-        padding: 1%;
-        margin: 0%;
+
+    .indif {
+        font-size: 0.8em; /* Ajuste del tamaño de la fuente */
+        padding: 2%; /* Ajuste del padding */
     }
- 
 }
-@media screen and (min-width: 600px) and (max-width: 1400px){
-   
-    .indi{
-        margin: 2%;        
+
+/* Media Queries para pantallas medianas (tabletas) */
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+    .indi {
+        margin: 2%;
+        width: 32%;  /* Hace que haya 3 columnas en pantallas medianas */
     }
-    
-    .indif{
-        font-size: 0.9em;
-        padding: 3%;
-        margin: 0%;
+
+    .indif {
+        font-size: 1em; /* Ajuste del tamaño de la fuente */
+        padding: 3%; /* Ajuste del padding */
     }
- 
 }
+
+/* Media Queries para pantallas grandes */
+@media screen and (min-width: 1400px) {
+    .indi {
+        margin: 1%;
+        width: 30%;  /* Hace que las tarjetas tengan un 30% de ancho en pantallas grandes */
+    }
+}
+

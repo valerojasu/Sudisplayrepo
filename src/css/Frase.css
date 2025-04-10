@@ -1,69 +1,163 @@
-.frasebody{ 
-    width: 100%;
-    padding:0%;
-    height: 70vh;
-    color: white;
-    background: rgb(19, 25,49 , 0.9) url(../Imagenes/Por3.jpg);
-    background-position: 0% 20%;
-    background-size:cover;
-    align-items: center;    
-    display: flex;
-    text-transform: uppercase;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    font-family: 'Raleway', sans-serif;
+.frasebody {
+  width: 100%;
+  min-height: 70vh;
+  height: auto;
+  color: white;
+  background: rgb(19, 25, 49, 0.9) url(../Imagenes/Por3.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5vw;
 }
 
-.titulofrase{
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    font-size: 1.7rem;
-    margin-top: 3%;
+.frasebody > * {
+  max-width: 800px;
 }
-.descfras{
+
+.titulofrase {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.descfras {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Slider */
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajuste de tamaño en el slider */
+.slick-slide img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.slick-dots li button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: white;
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+
+/* <= 1200px */
+@media (max-width: 1200px) {
+  .frasebody {
+    min-height: 60vh;
+    padding: 0 4vw;
+  }
+
+  .titulofrase {
+    font-size: 1.8rem;
+  }
+
+  .descfras {
+    font-size: 1.2rem;
+  }
+
+  .slick-slide img {
+    height: 60vh;
+  }
+}
+
+/* <= 992px */
+@media (max-width: 992px) {
+  .frasebody {
+    min-height: 50vh;
+    padding: 0 3vw;
+  }
+
+  .titulofrase {
+    font-size: 1.6rem;
+  }
+
+  .descfras {
+    font-size: 1rem;
+  }
+
+  .slick-slide img {
+    height: 50vh;
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .frasebody {
+    min-height: 45vh;
+    padding: 0% 10%;
+  }
+
+  .titulofrase {
     font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 20%;
+  }
+
+  .descfras {
+    font-size: 0.9rem;
+  }
+
+  .slick-slide img {
+    height: 45vh;
+  }
 }
 
-@media screen and (min-width: 100px) and (max-width: 600px) {
-    .frasebody{ 
-        height: 45vh;
-           }
-    
-    .titulofrase{
-        font-size: 0.8rem;
-        width: 100%;
-        margin-top: 15%;
-    }
-    .descfras{
-        width: 100%;
-        font-size: 0.7rem;
-     
-    }    
+/* <= 480px */
+@media (max-width: 480px) {
+  .frasebody {
+    min-height: 40vh;
+    padding: 0% 10%;
+
+  }
+
+  .titulofrase {
+    font-size: 1.5rem;
+  }
+
+  .descfras {
+    font-size: 1rem;
+  }
+
+  .slick-slide img {
+    height: 40vh;
+  }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1400px) {
-    .frasebody{ 
-        height: 45vh;
-       
-        }
-    
-    .titulofrase{
-        font-size: 1rem;
-        margin-top: 10%;
-        width: 100%;
-        padding: 0%;
-    }
-    .descfras{
-        font-size: 0.9rem;
-     
-    }    
-}
-
-@media (min-width: 576px) {
-    .container, .container-sm {
-        max-width: 640px;
-    }
-}

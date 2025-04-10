@@ -1,139 +1,156 @@
-.frase{ 
-    width: 100%;
-    padding:0%;
-    height: 100vh;
-    color: white;
-    background: rgb(19, 25,49 , 0.9) url(../Imagenes/Por3.jpg);
-    background-position: 0% 50%;
-    background-size: auto;
-    align-items: center;    
-    display: flex;
-    text-transform: uppercase;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    font-family: 'Raleway', sans-serif;
-}
-.frasel{
-    width: 10%;
-}
-.col-5 {
-    flex: 0 0 auto;
-    width: 41.66666667%;
-    display: inline;
-    align-content: space-around;
-}
-.titulo2{
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    margin-top: 20%; /*50%*/
-    font-size: 1.7rem;
-}
-.desc{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10%; /*20%*/
-}
-
-.fotodispl{
-    width: 100%;
-}
-
-.scroll-container {
-  background-color:transparent;
-  overflow: auto;
-  display: flex;
-  justify-content: space-evenly;
-  height: 100vh;
-  margin-bottom: 3%;
+/* Contenedor principal */
+.frase {
   width: 100%;
-  white-space: nowrap;
+  padding: 5%;
+  height: auto; /* Permite que el contenido fluya */
+  color: white;
+  background: rgb(19, 25, 49, 0.9) url(../Imagenes/Por3.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;  /* Mantén el diseño en columnas */
+  text-transform: uppercase;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
-.scroll-container img {
-    margin: 0.5%;
+/* Fila que contiene las columnas */
+.frase-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+  gap: 1rem; /* Espaciado entre las columnas */
 }
-.slideshow{
+
+/* Columna de texto */
+.col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 2rem;
+  width: 100%; /* Hace que ocupe el 100% en pantallas pequeñas */
+  box-sizing: border-box;
+}
+
+.titulo2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Columna del slider */
+.col-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Hace que ocupe el 100% en pantallas pequeñas */
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 70vh; /* Ajustamos el tamaño de las imágenes */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-indicators li {
+  background-color: white;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .col-text, .col-slider {
     width: 100%;
-    text-align: center;
+    padding: 0;
+  }
+
+  .titulo2 {
+    font-size: 1.8rem; /* Reduce el tamaño en pantallas más pequeñas */
+  }
+
+  .desc {
+    font-size: 1.2rem; /* Reduce el tamaño en pantallas más pequeñas */
+  }
+
+  .carousel-item img {
+    height: 60vh; /* Ajusta la altura de las imágenes */
+  }
 }
-.slick-slide img{
-    display: inline;
-    height: 78vh;
+
+@media screen and (max-width: 992px) {
+  .frase-row {
+    flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    gap: 1.5rem; /* Aumenta el espacio entre las columnas */
+  }
+
+  .titulo2 {
+    font-size: 1.6rem; /* Ajusta aún más el tamaño del título */
+  }
+
+  .desc {
+    font-size: 1rem; /* Ajusta el tamaño de la descripción */
+  }
+
+  .carousel-item img {
+    height: 50vh; /* Ajuste de altura */
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .titulo2 {
+    font-size: 1.4rem; /* Ajusta el tamaño del título */
+  }
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-.slick-dots{
-    color: white;
+  .desc {
+    font-size: 0.9rem; /* Ajusta el tamaño de la descripción */
+  }
 
+  .carousel-item img {
+    height: 40vh; /* Ajuste de altura */
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .titulo2 {
+    font-size: 1.2rem; /* Ajusta el tamaño del título */
+  }
 
-@media screen and (min-width: 100px) and (max-width: 600px) {
-    .frase{ 
-        height: 70vh;
-        padding: 10% 5%;
-        display: flex;   
-    }
+  .desc {
+    font-size: 0.9rem; /* Ajuste de tamaño para pantallas muy pequeñas */
+  }
 
-    .colt{
-        width: 100%;
-    }
-    
-    .titulo2{
-        margin-top: 0%; 
-        font-size: 1rem;
-        
-    }
-    .desc{
-        font-size: 0.8rem;
-    
-    }
-    .fotodispl{
-        width: 100%;
-    }
- 
-    
-    .slideshow{
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-    .slick-slide img{
-          height: 40vh;      
-    }
-   
-    
-}
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-     .frase{ 
-        padding: 0%;
-    }
+  .carousel-item img {
+    height: 35vh; /* Ajusta la altura para pantallas pequeñas */
+  }
 
-    .titulo2{
-        font-size: 1.2rem;  
-        margin-top: 1%; 
-    }
-    .colt{
-        width: 100%;
-    }
-    
+  .frase {
+    padding: 3%; /* Reduce el padding para dispositivos pequeños */
+  }
 
-    .desc{
-        font-size: 1rem;
-        text-align: center;
-    
-    }
-    .fotodispl{
-        width: 100%;
-    }
- 
-   
-    .slick-slide img{
-          height: 50vh;      
-    }
-
-    
+  .col-text, .col-slider {
+    padding: 0; /* Elimina padding adicional */
+  }
+  .frase-row {
+    padding: 10% 3%;
+  }
 }

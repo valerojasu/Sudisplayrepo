@@ -1,66 +1,78 @@
-.footerm{
-    align-content: center;
-    background-color:black;
-    color: white; 
+.footerm {
+    background-color: black;
+    color: white;
     width: 100%;
-    padding: 1% 0%;
-    display: inline-flex;
-}
-
-.titulosf{
-         font-size: 0.7rem;
-         font-weight: bold;
-}
- 
-.subf{
-         font-size: 0.7rem;
-         font-weight: bold;
-
-}
-
-a{
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .titulosf {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  
+  .subf {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  
+  a {
     text-decoration: none;
     color: white;
-    cursor:pointer;
-}
-
-a:hover{
+    cursor: pointer;
+  }
+  
+  a:hover {
     color: #bcd424ab;
     text-decoration: underline;
-    cursor:pointer;
-}
-
-@media screen and (min-width: 100px) and (max-width: 600px) {
-    .footerm{
-        padding: 1% 0%;
-        text-align: center;
-     
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footerm {
+      padding: 3% 0;
+      text-align: center;
     }
-     .titulosf{
-         font-size: 0.5rem;
+  
+    .titulosf {
+      font-size: 0.5rem;
     }
- 
-    .subf{
-         font-size: 0.5rem;
-
- 
+  
+    .subf {
+      font-size: 0.5rem;
     }
-}
-@media screen and (min-width: 600px) and (max-width: 1300px) {
-    .footerm{
-        padding: 1% 0%;
-        align-items: center;
-        display: inline-flex;
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1300px) {
+    .footerm {
+      padding: 1% 0;
+      align-items: center;
+      text-align: center;
     }
-     .titulosf{
-         font-size: 0.7rem;
+  
+    .titulosf {
+      font-size: 0.7rem;
     }
- 
-    .subf{
-         font-size: 0.7rem;
-
- 
+  
+    .subf {
+      font-size: 0.7rem;
     }
-    
-}
-   
+  }
+  
+  @media screen and (min-width: 1300px) {
+    .footerm {
+      padding: 1% 0;
+    }
+  
+    .titulosf {
+      font-size: 1rem;
+    }
+  
+    .subf {
+      font-size: 1rem;
+    }
+  }
+  

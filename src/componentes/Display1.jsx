@@ -9,12 +9,12 @@ return(
             <Container>
       <Row>
       
-        <Col>
+        <Col Col xs={12} md={6}>
         <h1 className="titulofrase" >{props.pregunta}</h1>
         
         
                     </Col>
-                    <Col>
+                    <Col Col xs={12} md={6}>
         <h1 className="descfras"> {props.descripcion}</h1>
                     </Col>
       </Row>

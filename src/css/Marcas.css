@@ -1,58 +1,47 @@
-.Marcas-box{
-    align-content: center;
+.Marcas-box {
     background: white;
     width: 100%;
-    margin: 2% 0%;
-    padding: 0% 10%;
+    padding: 2% 0%;
     display: flex;
     font-family: 'Raleway', sans-serif;
     min-height: 30vh;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     text-align: center;
-
 }
-.marcat{
+
+.marcat {
     width: 100%;
     font-weight: bold;
     margin: 10% 0%;
     text-transform: uppercase;
     font-size: 2.1rem;
 }
-  
+
 .Logof {
-    object-fit:fill;
+    object-fit: fill;
     width: 50%;
     scroll-snap-align: center;
 }
 
-@media screen and (min-width: 100px) and (max-width: 599px){
-
-
-    .marcat{
-    
+/* Responsividad */
+@media screen and (max-width: 599px) {
+    .marcat {
         font-size: 1rem;
     }
-      
-    .Logof {
-        width: 80%;  
-        margin: 10% 0%;
-      
-    }
-    
-   
 
+    .Logof {
+        width: 80%;
+        margin: 10% 0%;
+    }
 }
-@media screen and (min-width: 600px) and (max-width: 1300px){
-   
-    .marcat{
-    
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    .marcat {
         font-size: 1.4rem;
     }
-      
-    .Logof {
-        width: 70%;  
-      
-    }
 
+    .Logof {
+        width: 70%;
+    }
 }

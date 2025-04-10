@@ -1,154 +1,164 @@
-.project{
-    width: 90%;
-    height: 55vh;
-    padding: 6%;
-    margin-bottom: 10%;
+/* Estilo para la sección del contacto */
+.project {
+    padding: 10%;
+    width: 100%;
+    margin: 0%;
     color: black;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    background-color: #fff;
-}
-
-.letraf{
-    font-size: 0.8rem;
-    margin:2% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactos{
+    width: 100%;
+    padding-top:2%;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .arroba{
+    color: black;
+    font-size: 1.7rem;
+    height: 3vh;
+    padding: 4%;
+    margin: 0%;
+    background-color: transparent;
+    border-color: transparent;
+  }
+    
+  /* Estilo para las etiquetas de los campos de formulario */
+  .letraf {
+    font-size: 1rem;
+    margin: 2% 0%;
     width: 100%;
     letter-spacing: 3px;
     font-weight: bold;
-
-}
-
-.letrat{
-    width: 100%;
-    font-size: 4rem;
-    margin-bottom: 3%;
-    line-height: 1;
-    text-align: left;
-}
-.button {
+  }
+  
+  /* Estilo del botón de envío */
+  .button {
     display: inline-block;
     margin-top: 2%;
     margin-bottom: 5%;
-    padding: 2% 10%;    
-    float: none;
+    padding: 2% 10%;
     width: 100%;
-    align-self: center;
     background-color: #000;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 1.6;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-}
-
-.placeholder{
-    font-size: 0.5rem;
-}
-
-.contactos{
-    width: 100%;
-    display: flex;
-    padding: 4%;
-    background-color: #bcd424ab;
-}
-
-@media screen and (min-width: 100px) and (max-width: 500px) {
-    .project{
-        height: 50vh;
-        font-weight: bold;
-        width: 100%;
-        display: inline-flex;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Ajuste de los campos de formulario */
+  .input-group, .form-control, .textarea {
+    margin-bottom: 15px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 500px) {
+    .project {
+      width: 100%;
+      padding: 5%;
     }
-    
-    .letraf{
-        font-size: 0.6rem;
-        font-weight: bold;
+  
+    .letrat {
+      font-size: 2.5rem;
     }
-    
-    .letrat{
-        
-        font-size: 1.3rem;
-        display: inline-flex;
-        align-items: center;
-
-        
-    }
-    .container{
-        max-width: 501px;
-    }
-   
-}
-@media screen and (min-width: 501px) and (max-width: 800px) {
-    .project{
-        height: 50vh;
-        font-weight: bold;
-        width: 100%;
-        display: inline-flex;
-
-    }
-    
-    .letraf{
-        font-size: 0.6rem;
-        font-weight: bold;
-    }
-    
-    .letrat{
-        padding-top: 10%;
-        font-size: 2rem;
-        display: inline-flex;
-        align-items: center;
-
-        
-    }
-    .container{
-        max-width: 801px;
+  
+    .letraf {
+      font-size: 0.8rem;
     }
   
     .button {
-       
-        font-size: 0.5rem;
-       
+      font-size: 0.9rem;
     }
-}
-@media screen and (min-width: 801px) and (max-width: 1100px) {
-    .project{
-        height: 50vh;
-        font-weight: bold;
-        width: 100%;
-       
-    }
-
-    .container{
-        max-width: 801px;
-    }
-    
-
-    .letraf{
-        font-size: 0.6rem;
-        font-weight: bold;
-    }
-    
-    .letrat{
-        font-size: 2rem;
-    }
-
+  }
   
-}
-
-@media screen and (min-width: 1101px) and (max-width: 1800px) {
-   
-
-
-    .letraf{
-        font-size: 0.6rem;
-        font-weight: bold;
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    .project {
+      width: 100%;
+      padding: 5%;
     }
-    
-    .letrat{
-        font-size: 3rem;
-    }
-
   
-}
+    .letrat {
+      font-size: 2rem;
+    }
+  
+    .letraf {
+      font-size: 1rem;
+    }
+  
+    .button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 801px) and (max-width: 1100px) {
+    .project {
+      width: 80%;
+      padding: 4%;
+    }
+  
+    .letrat {
+      font-size: 2rem;
+    }
+  
+    .letraf {
+      font-size: 1.1rem;
+    }
+  
+    .button {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (min-width: 1101px) and (max-width: 1800px) {
+    .project {
+      width: 90%;
+      padding: 4%;
+    }
+  
+    .letrat {
+      font-size: 2rem;
+    }
+  
+    .letraf {
+      font-size: 1.2rem;
+    }
+  
+    .button {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1801px) {
+    .project {
+      width: 90%;
+      padding: 4%;
+    }
+  
+    .letrat {
+      font-size: 2.8rem;
+    }
+  
+    .letraf {
+      font-size: 1.3rem;
+      text-align: left;
+    }
+  
+    .button {
+      font-size: 1.3rem;
+    }
+  }
+  

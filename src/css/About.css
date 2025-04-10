@@ -1,248 +1,265 @@
-.logonav{
-    width: 12%;
-}
-.menu{
-    background:  rgb(246, 246, 246);
-    line-height: 1.8; 
-    padding: 1% 0%;   
+/* Reseteo global */
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
- 
-.menuletras{
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Logo Navigation */
+.logonav {
+    width: 100%;
+    max-width: 150px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Menu */
+.menu {
+    background: rgb(246, 246, 246);
+    line-height: 1.8;
+    padding: 1% 0;
+}
+
+/* Menu Links */
+.menuletras {
     font-size: 1.2rem;
-    padding: auto;
-    align-items: center;
-    display: flex;
     color: #104d80;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    cursor: pointer;  
+    cursor: pointer;
     font-family: 'Raleway', sans-serif;
-
-
-}
-.menuletras:hover{
-    color: #bcd424;
-    text-decoration: none;  
-}
-.menuitem{
-    width: 100%;
-    display: inline-flex;
-    padding: 0% 4%;
-    align-items: center;    
-}
-li{
-  list-style-type: none;  
-}
-
-.divi{
-    padding: 0% 1%;
-}
-
-.container-fluid{
+    padding: 0 15px;
     display: flex;
-    width: 90%;
-    flex-wrap: inherit;
     align-items: center;
 }
 
+.menuletras:hover {
+    color: #bcd424;
+    text-decoration: none;
+}
 
+/* Flex Container for Menu Items */
+.menuitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+
+/* List items */
+li {
+    list-style-type: none;
+}
+
+/* Main Layout */
 .mainabout {
-    position: relative;
-    z-index: 2;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
     width: 100%;
-    background-color:transparent;
+    background-color: transparent;
     line-height: 1.8;
 }
 
-/*Quienes?*/
-.atitulo{
-    width: 100%;
+/* Section Titles */
+.atitulo {
     font-size: 2.8rem;
     line-height: 1;
-    font-family: 'Raleway', sans-serif;
-    margin: 2% 0%;
 }
 
-.parrafo1{
+/* Paragraphs */
+.parrafo1 {
     font-size: 1.4rem;
-    letter-spacing: 3px;
+    padding-left: 2rem;
+    letter-spacing: 1px;
     color: black;
+    line-height: 1.5;
 }
 
-.encimac{
+/* Contact Links */
+.encimac {
     font-size: 1.5rem;
     color: black;
     text-align: center;
     font-family: "Poppins", sans-serif;
     text-transform: none;
     text-decoration: none;
-
 }
 
-.encimac:hover{
+.encimac:hover {
     color: #889c07;
     cursor: pointer;
-    text-decoration: none;
-    text-transform: none;
-
 }
 
-.a{
-    color: black;
-}
-
-.quienes{
-    width: 100%;
+/* Section Layout */
+.quienes {
     text-align: center;
     color: black;
-    padding: 10% 7%;
-   
+    background-color: white;
+    padding: 10% 4%;
 }
 
-.logoabout{
+.quienesform {
+    text-align: left;
+    color: black;
+    padding: 2% 7%;
+    background-color: white;
+}
+
+.quienesc {
     width: 100%;
-    padding: 3% 15%;
+    padding: 10% 4%;
+    height: 50vh; /* Permite que el contenido fluya */
+    color: white;
+    background: rgb(19, 25, 49, 0.9) url(../Imagenes/porta2.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* Mantén el diseño en columnas */
+    text-transform: uppercase;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
 }
-.col-sm-4 {
-    display: inline-grid;        
-    align-items: center;    
+
+.quienesc a {
+    color: white;
 }
 
+/* Logo image in About section */
+.logoabout {
+    width: 100%;
+    max-width: 300px; /* Limita el tamaño máximo */
+    padding-top: 14%;
+}
 
-@media screen and (min-width: 100px) and (max-width: 600px) {
-    /*Nav*/
-    .logonav{
-        width: 30%;
-    
-    }
-    
-    .menuletras{
-        font-size: 0.7rem;
+/* Column layout for small screens */
+.col-sm-4,
+.col-sm-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .logonav {
+        width: 80%; /* Aumenta el logo en pantallas muy pequeñas */
     }
 
-    .col-sm-7 {
-        width:100%;
+    .menuletras {
+        font-size: 1rem; /* Ajuste del tamaño de la fuente */
     }
-    .col-sm-4 {
-        width: 100%;
-        display: flex;
-        justify-content: center;    
+
+    .atitulo {
+        font-size: 1.5rem; /* Ajuste del tamaño de la fuente */
     }
-   
 
-    /*Quienes?*/
+    .parrafo1 {
+        font-size: 1rem; /* Ajuste del tamaño de la fuente */
+    }
 
+    .logoabout {
+        width: 40%;
+        padding-bottom: 10%; /* Mejora el tamaño del logo */
+    }
+
+    .encimac {
+        font-size: 1rem; /* Ajuste del tamaño de la fuente */
+    }
+
+    .quienes {
+        flex-direction: column; /* Ajuste a columna */
+        padding: 5% 2%; /* Ajuste del padding */
+    }
+
+    .container-fluid {
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        padding: 0;
+    }
     .atitulo{
-        font-size: 1rem;
-       
+        padding-top: 15%;
     }
-    
-    .parrafo1{
-        font-size: 0.7rem;
-        width: 100%;
-    }
-  
-    .logoabout{
-        width: 60%;
-    }
-    .encimac{
-        font-size: 0.7rem;
-       
-    }
-
-    .quienes{
-        display: inline-flex;
-
-    }
-
-   
-    
-   
-    
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    /*Nav*/
-    .logonav{
-        width: 20%;
-    
-    }
-    
-    .menuletras{
-        font-size: 0.8rem;
-    }
-  
-
-    .col-sm-7 {
-        width:100%;
-    }
-    .col-sm-4 {
-        width: 100%;
-        display: flex;
-        justify-content: center;    
+    .logonav {
+        width: 30%; /* Logo de tamaño mediano */
     }
 
-    
-    
-    /*Quienes?*/
-
-    .atitulo{
+    .menuletras {
         font-size: 1rem;
-       
     }
-    
-    .parrafo1{
-        font-size: 0.7rem;
-        width: 100%;
+
+    .atitulo {
+        font-size: 2rem; /* Ajuste del tamaño de la fuente */
     }
-  
-    .logoabout{
-        width: 60%;
+
+    .parrafo1 {
+        font-size: 1.2rem; /* Ajuste del tamaño de la fuente */
     }
-    
-    
+
+    .logoabout {
+        width: 80%; /* Ajuste del tamaño del logo */
+    }
+   
 }
 
 @media screen and (min-width: 901px) and (max-width: 1500px) {
-    /*Nav*/
-    .logonav{
-        width: 30%;
-    
-    }
-    
-    .menuletras{
-        font-size: 0.9rem;
+    .logonav {
+        width: 20%; /* Logo más pequeño en pantallas grandes */
     }
 
-    
-    
-    /*Quienes?*/
+    .menuletras {
+        font-size: 1.1rem; /* Ajuste del tamaño de la fuente */
+    }
 
-    .atitulo{
-        font-size: 1rem;
-       
+    .atitulo {
+        font-size: 2.5rem; /* Ajuste del tamaño de la fuente */
     }
-    
-    .parrafo1{
-        font-size: 0.7rem;
-        width: 100%;
+
+    .parrafo1 {
+        font-size: 1.3rem; /* Ajuste del tamaño de la fuente */
     }
-  
-    .logoabout{
-        width: 100%;
-        
+
+    .logoabout {
+        width: 100%; /* Ajuste del tamaño del logo */
     }
+
     .col-sm-4 {
-        width: 50%;
-        display: inline-grid;        
-        align-items: center;    
+        width: 50%; /* Ajuste del tamaño de la columna */
     }
+
     .col-sm-7 {
-        width:50%;
+        width: 50%; /* Ajuste del tamaño de la columna */
     }
-  
+}
+
+@media screen and (min-width: 1500px) {
+    .logonav {
+        width: 15%; /* Logo aún más pequeño en pantallas muy grandes */
+    }
+
+    .menuletras {
+        font-size: 1.2rem;
+    }
+
+    .atitulo {
+        font-size: 3rem; /* Ajuste del tamaño de la fuente */
+    }
+
+    .parrafo1 {
+        font-size: 1.5rem; /* Ajuste del tamaño de la fuente */
+    }
+
+    .logoabout {
+        width: 50%; /* Logo centrado y más pequeño */
+    }
 }

@@ -1,24 +1,21 @@
-import './App.css';
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
 import About from './componentes/About';
-import Mainp from './componentes/Mainp.jsx';
+import Mainp from './componentes/Mainp';
 
 function App() {
   return (
-    <div>
-
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-      <Route path='/' element= {<Mainp/>}/>
-      <Route path='/mainp' element= {<Mainp/>}/>
-      <Route path='/about' element= {<About/>}/>
+        <Route path='/' element={<Mainp />} />
+        <Route path='/mainp' element={<Mainp />} />
+        <Route path='/about' element={<About />} />
       </Routes>
-      
     </BrowserRouter>
-    </div>
   );
 }
 
 export default App;
+
