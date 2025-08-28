@@ -14,6 +14,19 @@ import Disp9 from "../Imagenes/imag-dis/Disp9.png";
 import Disp10 from "../Imagenes/imag-dis/Disp10.png";
 
 function Frases(props) {
+  const images = [
+    Disp1,
+    Disp2,
+    Disp3,
+    Disp4,
+    Disp5,
+    Disp6,
+    Disp7,
+    Disp8,
+    Disp9,
+    Disp10,
+  ];
+
   return (
     <div className="frase">
       <Container>
@@ -35,18 +48,7 @@ function Frases(props) {
                 pause={false}
                 wrap={true}
               >
-                {[
-                  Disp1,
-                  Disp2,
-                  Disp3,
-                  Disp4,
-                  Disp5,
-                  Disp6,
-                  Disp7,
-                  Disp8,
-                  Disp9,
-                  Disp10,
-                ].map((img, i) => (
+                {images.map((img, i) => (
                   <Carousel.Item key={i}>
                     <img src={img} alt={`Imagen ${i + 1}`} />
                   </Carousel.Item>
