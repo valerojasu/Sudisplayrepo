@@ -1,265 +1,272 @@
-/* Reseteo global */
+/* ==============================
+   Reset y Estilos Globales
+============================== */
+*,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+  width: 100%;
+  height: 100%;
 }
 
-/* Logo Navigation */
-.logonav {
-    width: 100%;
-    max-width: 150px; /* Limita el tamaño máximo del logo */
-    height: auto; /* Mantiene la proporción de la imagen */
+/* ==============================
+   Logos
+============================== */
+.logo {
+  width: clamp(15%, 20vw, 100%);
+  max-width: 300px;
+  height: auto;
 }
 
-/* Menu */
+/* ==============================
+   Navbar
+============================== */
 .menu {
-    background: rgb(246, 246, 246);
-    line-height: 1.8;
-    padding: 1% 0;
+  background: rgb(246, 246, 246);
+  padding: 1% 2%;
+  line-height: 1.8;
 }
 
-/* Menu Links */
+.menuitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding-left: 0;
+  justify-content: flex-end; /* Por defecto derecha */
+}
+
 .menuletras {
-    font-size: 1.2rem;
-    color: #104d80;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  color: #104d80;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .menuletras:hover {
-    color: #bcd424;
-    text-decoration: none;
+  color: #bcd424;
 }
 
-/* Flex Container for Menu Items */
-.menuitem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4%;
-}
-
-/* List items */
-li {
-    list-style-type: none;
-}
-
-/* Main Layout */
+/* ==============================
+   Main About Section
+============================== */
 .mainabout {
-    font-family: 'Raleway', sans-serif;
-    overflow: hidden;
-    width: 100%;
-    background-color: transparent;
-    line-height: 1.8;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
 }
 
 /* Section Titles */
 .atitulo {
-    font-size: 2.8rem;
-    line-height: 1;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  line-height: 1;
 }
 
 /* Paragraphs */
 .parrafo1 {
-    font-size: 1.4rem;
-    padding-left: 2rem;
-    letter-spacing: 1px;
-    color: black;
-    line-height: 1.5;
+  font-size: clamp(1rem, 1vw, 1rem);
+  padding-left: 2rem;
+  letter-spacing: 1px;
+  color: black;
+  line-height: 1.5;
 }
 
 /* Contact Links */
 .encimac {
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    text-transform: none;
-    text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .encimac:hover {
-    color: #889c07;
-    cursor: pointer;
+  color: #889c07;
+  cursor: pointer;
 }
 
-/* Section Layout */
+/* ==============================
+   Secciones
+============================== */
 .quienes {
-    text-align: center;
-    color: black;
-    background-color: white;
-    padding: 10% 4%;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 10% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quienesform {
-    text-align: left;
-    color: black;
-    padding: 2% 7%;
-    background-color: white;
+  text-align: left;
+  color: black;
+  padding: 2% 7%;
+  background-color: white;
 }
 
 .quienesc {
-    width: 100%;
-    padding: 10% 4%;
-    height: 50vh; /* Permite que el contenido fluya */
-    color: white;
-    background: rgb(19, 25, 49, 0.9) url(../Imagenes/porta2.jpg);
-    background-position: 0% 50%;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    flex-direction: column;  /* Mantén el diseño en columnas */
-    text-transform: uppercase;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    font-family: 'Raleway', sans-serif;
+  width: 100%;
+  min-height: 50vh;
+  color: white;
+  background: rgba(19, 25, 49, 0.9) url(../Imagenes/porta2.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.quienesc a {
-    color: white;
-}
-
-/* Logo image in About section */
+/* Logos en About Section */
 .logoabout {
-    width: 100%;
-    max-width: 300px; /* Limita el tamaño máximo */
-    padding-top: 14%;
+  width: clamp(30%, 20vw, 100%);
+  max-width: 300px;
+  padding-top: 14%;
 }
 
-/* Column layout for small screens */
+/* Column layout */
 .col-sm-4,
 .col-sm-7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-/* Media Queries for responsiveness */
+/* ==============================
+   Media Queries
+============================== */
+
+/* Pantallas pequeñas */
 @media screen and (max-width: 600px) {
-    .logonav {
-        width: 80%; /* Aumenta el logo en pantallas muy pequeñas */
-    }
+  .logo {
+    width: 80%;
+  }
 
-    .menuletras {
-        font-size: 1rem; /* Ajuste del tamaño de la fuente */
-    }
+  .menuletras {
+    font-size: 1rem;
+  }
 
-    .atitulo {
-        font-size: 1.5rem; /* Ajuste del tamaño de la fuente */
-    }
+  .atitulo {
+    font-size: 1.5rem;
+    padding-top: 15%;
+  }
 
-    .parrafo1 {
-        font-size: 1rem; /* Ajuste del tamaño de la fuente */
-    }
+  .parrafo1 {
+    font-size: 1rem;
+  }
 
-    .logoabout {
-        width: 40%;
-        padding-bottom: 10%; /* Mejora el tamaño del logo */
-    }
+  .logoabout {
+    width: 40%;
+    padding-bottom: 10%;
+  }
 
-    .encimac {
-        font-size: 1rem; /* Ajuste del tamaño de la fuente */
-    }
+  .encimac {
+    font-size: 1rem;
+  }
 
-    .quienes {
-        flex-direction: column; /* Ajuste a columna */
-        padding: 5% 2%; /* Ajuste del padding */
-    }
+  .quienes {
+    padding: 5% 2%;
+  }
 
-    .container-fluid {
-        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-        padding: 0;
-    }
-    .atitulo{
-        padding-top: 15%;
-    }
+  .container-fluid {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
+/* Pantallas medianas */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    .logonav {
-        width: 30%; /* Logo de tamaño mediano */
-    }
+  .logo {
+    width: 30%;
+  }
 
-    .menuletras {
-        font-size: 1rem;
-    }
+  .menuletras {
+    font-size: 1rem;
+  }
 
-    .atitulo {
-        font-size: 2rem; /* Ajuste del tamaño de la fuente */
-    }
+  .atitulo {
+    font-size: 2rem;
+  }
 
-    .parrafo1 {
-        font-size: 1.2rem; /* Ajuste del tamaño de la fuente */
-    }
+  .parrafo1 {
+    font-size: 1.2rem;
+  }
 
-    .logoabout {
-        width: 80%; /* Ajuste del tamaño del logo */
-    }
-   
+  .logoabout {
+    width: 80%;
+  }
 }
 
+/* Pantallas grandes */
 @media screen and (min-width: 901px) and (max-width: 1500px) {
-    .logonav {
-        width: 20%; /* Logo más pequeño en pantallas grandes */
-    }
+  .logo {
+    width: 20%;
+  }
 
-    .menuletras {
-        font-size: 1.1rem; /* Ajuste del tamaño de la fuente */
-    }
+  .menuletras {
+    font-size: 1.1rem;
+  }
 
-    .atitulo {
-        font-size: 2.5rem; /* Ajuste del tamaño de la fuente */
-    }
+  .atitulo {
+    font-size: 2.5rem;
+  }
 
-    .parrafo1 {
-        font-size: 1.3rem; /* Ajuste del tamaño de la fuente */
-    }
+  .parrafo1 {
+    font-size: 1.3rem;
+  }
 
-    .logoabout {
-        width: 100%; /* Ajuste del tamaño del logo */
-    }
+  .logoabout {
+    width: 100%;
+  }
 
-    .col-sm-4 {
-        width: 50%; /* Ajuste del tamaño de la columna */
-    }
-
-    .col-sm-7 {
-        width: 50%; /* Ajuste del tamaño de la columna */
-    }
+  .col-sm-4,
+  .col-sm-7 {
+    width: 50%;
+  }
 }
 
-@media screen and (min-width: 1500px) {
-    .logonav {
-        width: 15%; /* Logo aún más pequeño en pantallas muy grandes */
-    }
+/* Pantallas extra grandes */
+@media screen and (min-width: 1501px) {
+  .logo {
+    width: 15%;
+  }
 
-    .menuletras {
-        font-size: 1.2rem;
-    }
+  .menuletras {
+    font-size: 1.2rem;
+  }
 
-    .atitulo {
-        font-size: 3rem; /* Ajuste del tamaño de la fuente */
-    }
+  .atitulo {
+    font-size: 3rem;
+  }
 
-    .parrafo1 {
-        font-size: 1.5rem; /* Ajuste del tamaño de la fuente */
-    }
+  .parrafo1 {
+    font-size: 1.5rem;
+  }
 
-    .logoabout {
-        width: 50%; /* Logo centrado y más pequeño */
-    }
+  .logoabout {
+    width: 50%;
+  }
 }
