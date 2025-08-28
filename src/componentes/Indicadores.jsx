@@ -16,7 +16,7 @@ function Indicadores() {
     { id: 6, title: "Estandarización de procesos" },
     { id: 7, title: "Activación BTL del PDV" },
     { id: 8, title: "Comandos de ejecución" },
-    { id: 9, title: "End to end" },
+    { id: 9, title: "E2E" },
   ];
 
   return (
