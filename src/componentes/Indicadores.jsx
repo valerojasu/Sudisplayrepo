@@ -20,31 +20,15 @@ function Indicadores() {
   ];
 
   return (
-    <div className="infor">
-      <Container>
-        <Row>
-          {indicadores.slice(0, 3).map((indicador) => (
-            <Col key={indicador.id} className="indi" xs={12} md={4}>
-              <h3 className="indif">{indicador.title}</h3>
-            </Col>
-          ))}
-        </Row>
-        <Row>
-          {indicadores.slice(3, 6).map((indicador) => (
-            <Col key={indicador.id} className="indi" xs={12} md={4}>
-              <h3 className="indif">{indicador.title}</h3>
-            </Col>
-          ))}
-        </Row>
-        <Row>
-          {indicadores.slice(6, 9).map((indicador) => (
-            <Col key={indicador.id} className="indi" xs={12} md={6}>
-              <h3 className="indif">{indicador.title}</h3>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </div>
+    <Container className="infor">
+      <Row className="justify-content-center">
+        {indicadores.map((indicador) => (
+          <Col key={indicador.id} className="indi">
+            <h3 className="indif">{indicador.title}</h3>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
