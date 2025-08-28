@@ -1,5 +1,6 @@
 .infor {
   display: flex;
+  background-color: transparent;
   width: 100%;
   flex-wrap: wrap;
   gap: 2rem; /* espacio entre tarjetas */
